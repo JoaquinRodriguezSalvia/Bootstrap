@@ -1,0 +1,178 @@
+main{
+    h2{
+        text-align: center;
+    }
+    div{
+      
+      
+        div{
+            
+
+            
+            button{
+
+            }
+        }
+        div{
+            
+            img{
+                transition: 0.2s;
+                border-style:groove;
+                margin-top: 1em;
+                border-radius: 8px;
+                
+            }
+            div{
+                h5{
+                    font-size: 20px;
+                    color: black;
+                    text-align: center;
+                }
+                p{
+                    font-size: 20px;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+main{
+  div{
+    img{
+      border-style: inset;
+      border-radius: 8%;
+      margin-top: 1em;
+      transition: 0.2s;
+      &:hover{
+        scale: 1.1;
+      }
+    }
+  }
+}
+h4 {
+    padding: 10px;
+  }
+.productos {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "productos_card1 productos_card2 productos_card3 productos_card4"
+      "productos_card5 productos_card6 productos_card7 productos_card8"
+      "productos_card9 productos_card10 productos_card11 productos_card12";
+    grid-gap: 20px;
+    margin-top: 2em;
+    margin: auto;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+  .productos_card1 {
+    grid-area: productos_card1;
+  }
+  .productos_card2 {
+    grid-area: productos_card2;
+  }
+  .productos_card3 {
+    grid-area: productos_card3;
+  }
+  .productos_card4 {
+    grid-area: productos_card4;
+  }
+  .productos_card5 {
+    grid-area: productos_card5;
+  }
+  .productos_card6 {
+    grid-area: productos_card6;
+  }
+  .productos_card7 {
+    grid-area: productos_card7;
+  }
+  .productos_card8 {
+    grid-area: productos_card8;
+  }
+  .productos_card9 {
+    grid-area: productos_card9;
+  }
+  .productos_card10 {
+    grid-area: productos_card10;
+  }
+  .productos_card11 {
+    grid-area: productos_card11;
+  }
+  .productos_card12 {
+    grid-area: productos_card12;
+  }
+  .productos_img {
+    width: 100%;
+    height: 250px;
+    filter: brightness(0, 12);
+    -webkit-filter: brightness(0, 12);
+  }
+  .productos_main {
+    width: 100%;
+  }
+  .productos_titulo {
+    color: darkgoldenrod;
+    text-align: center;
+  }
+  .productos_parrafo {
+    font-size: iren;
+    color: rgb(2, 24, 44);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 320px) {
+    .productos {
+      height: auto;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(12, auto);
+      grid-template-areas:
+        "productos_card1"
+        "productos_card2"
+        "productos_card3"
+        "productos_card4"
+        "productos_card5"
+        "productos_card6"
+        "productos_card7"
+        "productos_card8"
+        "productos_card9"
+        "productos_card10"
+        "productos_card11"
+        "productos_card12";
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .productos {
+      height: auto;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, auto);
+      grid-template-areas:
+        "productos_card1 productos_card2"
+        "productos_card3 productos_card4"
+        "productos_card5 productos_card6"
+        "productos_card7 productos_card8"
+        "productos_card9 productos_card10"
+        "productos_card11 productos_card12";
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .productos {
+      height: auto;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+        "productos_card1 productos_card2 productos_card3 productos_card4"
+        "productos_card5 productos_card6 productos_card7 productos_card8"
+        "productos_card9 productos_card10 productos_card11 productos_card12";
+    }
+  }
