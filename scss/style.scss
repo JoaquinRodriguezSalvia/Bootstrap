@@ -2,6 +2,11 @@
 @import "_main.scss";
 @import "_footer.scss";
 
+@mixin size($alto, $ancho){
+  width: $ancho;
+  height: $alto;
+}
+
 * {
     margin: 0;
     padding: 0;
